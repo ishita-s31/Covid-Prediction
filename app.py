@@ -133,7 +133,7 @@ with prediction:
     ratio = cumulative_cases_result/cumulative_deaths
     ratio_float = "{:.2f}".format(ratio)
     html_str2 = f"""<style>p.b {{font: {14}px Courier;}}</style><p class="b">Ratio of Cumulative cases to Cumulative Deaths : {ratio_float}</p>"""
-    st.markdown(html_str2, unsafe_allow_html=True)
+    st.markdown("\n",html_str2, unsafe_allow_html=True)
     
     html_str3 = f"""<style>p.c {{font:{14}px Courier;}}</style><p class="c">Higher the ratio of cumulative cases to cumulative deaths better is the Health Infrastructure of {Country}</p>"""
     st.markdown(html_str3, unsafe_allow_html=True)
