@@ -130,13 +130,13 @@ with prediction:
     html_str1 = f"""<style>p.a {{font: {25}px Courier; font-weight:bolder}}</style><p class="a">Cumulative Cases : {cumulative_cases_result}</p>"""
     st.markdown(html_str1, unsafe_allow_html=True)  # displaying cumulative cases
     
-    ratio = cumulative_cases_result/cumulative_deaths
-    ratio_float = "{:.2f}".format(ratio)
-    html_str2 = f"""<style>p.a {{font: {14}px Courier;}}</style><p class="a">Ratio of Cumulative cases to Cumulative Deaths : {ratio_float}</p>"""
-    st.markdown(html_str2, unsafe_allow_html=True)
+   # ratio = cumulative_cases_result/cumulative_deaths
+    #ratio_float = "{:.2f}".format(ratio)
+    #html_str2 = f"""<style>p.a {{font: {14}px Courier;}}</style><p class="a">Ratio of Cumulative cases to Cumulative Deaths : {ratio_float}</p>"""
+    #st.markdown(html_str2, unsafe_allow_html=True)
     
-    html_str3 = f"""<style>p.a {{font:{14}px Courier;}}</style><p class="a">Higher the ratio of cumulative cases to cumulative deaths better is the Health Infrastructure of {Country}</p>"""
-    st.markdown(html_str3, unsafe_allow_html=True)
+    #html_str3 = f"""<style>p.a {{font:{14}px Courier;}}</style><p class="a">Higher the ratio of cumulative cases to cumulative deaths better is the Health Infrastructure of {Country}</p>"""
+    #st.markdown(html_str3, unsafe_allow_html=True)
 
     st.text('**Disclaimer : These graphs show performance of our model based on the\n'
             'dataset which ranges from 03-01-2020 to 20-05-2022 i.e total 869 days**')
